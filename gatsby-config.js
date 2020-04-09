@@ -5,5 +5,11 @@
  */
 
 module.exports = {
-  /* Your site config here */
-}
+  siteMetadata: {
+    title: 'CSS Loaders'
+  },
+  plugins: [
+    'gatsby-plugin-sass',
+    'gatsby-plugin-react-helmet'
+  ]
+};

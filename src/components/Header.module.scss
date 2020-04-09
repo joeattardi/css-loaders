@@ -1,0 +1,12 @@
+@import '../variables';
+
+#header {
+  background: $header-color;
+  color: #FFFFFF;
+
+  padding: 0.5rem;
+
+  h1 {
+    margin: 0;
+  }
+}

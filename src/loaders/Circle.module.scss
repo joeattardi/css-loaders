@@ -1,0 +1,41 @@
+@import '../variables';
+
+.circle {
+  border: 10px solid lighten($loader-color, 50%);
+  border-radius: 50%;
+
+  width: 200px;
+  height: 200px;
+
+  position: relative;
+}
+
+.circle:after {
+  content: '';
+
+  border: 10px solid transparent;
+  border-top-color: $loader-color;
+  border-radius: 50%;
+
+  width: 200px;
+  height: 200px;
+
+  display: block;
+  position: absolute;
+
+  top: -10px;
+  left: -10px;
+
+  animation: spin 1s linear infinite;
+  will-change: transform;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
